@@ -13,11 +13,9 @@ public class Crawler
 	Connection connection;
 	int urlID;
 	public Properties props;
-	static Queue<String> toVisit;
 
 	Crawler() {
 		urlID = 0;
-		toVisit = new LinkedList<String>();
 	}
 
 	public void readProperties() throws IOException {
@@ -105,56 +103,49 @@ public class Crawler
 	}
 */
 
-   	public void fetchURL(String url) {
-        // process url
-        if(url.startsWith("www") == true)
-            url = "http://" + url;
-        if(url.endsWith("/"))
-            url = url.substring(0, url.length()-1);
+   	public void fetchURL(String urlScanned) {
+		try {
+			URL url = new URL(urlScanned);
+			System.out.println("urlscanned="+urlScanned+" url.path="+url.getPath());
+ 
+    			// open reader for URL
+    			InputStreamReader in = 
+       				new InputStreamReader(url.openStream());
 
-        // check for invalid link
-        if (url.contains("@")
-                || url.contains(":80")
-                || url.contains(".pdf")
-                || url.contains(".pptx")
-                || url.contains(".jpg"))
-            return;
+    			// read contents into string builder
+    			StringBuilder input = new StringBuilder();
+    			int ch;
+			while ((ch = in.read()) != -1) {
+         			input.append((char) ch);
+			}
 
-		// Check if it is already in the database
-		try{
-			if (urlInDB(url))
-				return;
+     			// search for all occurrences of pattern
+    			String patternString =  "<a\\s+href\\s*=\\s*(\"[^\"]*\"|[^\\s>]*)\\s*>";
+    			Pattern pattern = 			
+	     			Pattern.compile(patternString, 
+	     			Pattern.CASE_INSENSITIVE);
+    			Matcher matcher = pattern.matcher(input);
+		
+			while (matcher.find()) {
+    				int start = matcher.start();
+    				int end = matcher.end();
+    				String match = input.substring(start, end);
+				String urlFound = matcher.group(1);
+				System.out.println(urlFound);
+
+				// Check if it is already in the database
+				if (!urlInDB(urlFound)) {
+					insertURLInDB(urlFound);
+				}				
+	
+    				//System.out.println(match);
+ 			}
+
 		}
-		catch(Exception e){
-
-		}
-		// Insert url into database
-		try{
-			insertURLInDB(url);
-		}
-		catch(Exception e){
-
-		}
-		System.out.println("Inserted URL: " + url + " into database");
-		// Crawl page with jsoup
-        Document doc = null;
-        try {
-            doc = Jsoup.connect(url)
-                    .userAgent("Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:25.0) Gecko/20100101 Firefox/25.0")
-                    .referrer("http://www.google.com")
-                    .timeout(10000)
-                    .ignoreHttpErrors(true)
-                    .get();
-        } catch (Exception e1) {
-            return;
-        }
-
-        Elements questions = doc.select("a[href]");
-        for (Element link : questions) {
-            String adjacent_link = link.attr("abs:href");
-            toVisit.add(adjacent_link);
-        }
-
+      		catch (Exception e)
+      		{
+       			e.printStackTrace();
+      		}
 	}
 
    	public static void main(String[] args)
@@ -165,15 +156,11 @@ public class Crawler
 			crawler.readProperties();
 			String root = crawler.props.getProperty("crawler.root");
 			crawler.createDB();
-			toVisit.add(root);
+			crawler.fetchURL(root);
 		}
 		catch( Exception e) {
          		e.printStackTrace();
 		}
-		while(!toVisit.isEmpty()){
-			String url = toVisit.poll();
-			crawler.fetchURL(url);
-		}
-	}
+    	}
 }
 
