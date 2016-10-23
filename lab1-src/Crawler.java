@@ -14,9 +14,11 @@ public class Crawler
 	int urlID;
 	public Properties props;
 	static Queue<String> toVisit;
+	static int count;
 
 	Crawler() {
 		urlID = 0;
+		count = 0;
 		toVisit = new LinkedList<String>();
 	}
 
@@ -67,9 +69,9 @@ public class Crawler
 		return false;
 	}
 
-	public void insertURLInDB( String url) throws SQLException, IOException {
-         	Statement stat = connection.createStatement();
-		String query = "INSERT INTO urls VALUES ('"+urlID+"','"+url+"','')";
+	public void insertURLInDB( String url, String description) throws SQLException, IOException {
+        Statement stat = connection.createStatement();
+		String query = "INSERT INTO urls VALUES ('"+urlID+"','"+url+"','"+description+"')";
 		//System.out.println("Executing "+query);
 		stat.executeUpdate( query );
 		urlID++;
@@ -128,13 +130,7 @@ public class Crawler
 		catch(Exception e){
 
 		}
-		// Insert url into database
-		try{
-			insertURLInDB(url);
-		}
-		catch(Exception e){
 
-		}
 		System.out.println("Inserted URL: " + url + " into database");
 		// Crawl page with jsoup
         Document doc = null;
@@ -148,6 +144,28 @@ public class Crawler
         } catch (Exception e1) {
             return;
         }
+
+		//Text processing
+        String text = doc.body().text();
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i< text.length(); i++) {
+        	if(sb.length() >= 100)
+        		break;
+            char c = text.charAt(i);
+            if (Character.isAlphabetic(c) || Character.isDigit(c) || Character.isWhitespace(c)) {
+                sb.append(c);
+            }
+        }
+        String description = sb.toString();
+        // Insert url and description into database
+		try{
+			insertURLIDnB(url, description);
+			count++;
+		}
+		catch(Exception e){
+
+		}
+
 
         Elements questions = doc.select("a[href]");
         for (Element link : questions) {
@@ -170,7 +188,7 @@ public class Crawler
 		catch( Exception e) {
          		e.printStackTrace();
 		}
-		while(!toVisit.isEmpty()){
+		while(count < 1000 && !toVisit.isEmpty()){
 			String url = toVisit.poll();
 			crawler.fetchURL(url);
 		}
