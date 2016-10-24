@@ -49,20 +49,34 @@ public class Crawler
 		// Delete the table first if any
 		try {
 			stat.executeUpdate("DROP TABLE urls");
+			stat.executeUpdate("DROP TABLE words");
 		}
 		catch (Exception e) {
 		}
 			
 		// Create the table
         	stat.executeUpdate("CREATE TABLE urls (urlid INT, url VARCHAR(512), description VARCHAR(200))");
+        	stat.executeUpdate("CREATE TABLE words (word VARCHAR(50), urlid INT)");
 	}
 
 	public boolean urlInDB(String urlFound) throws SQLException, IOException {
-         	Statement stat = connection.createStatement();
+        Statement stat = connection.createStatement();
 		ResultSet result = stat.executeQuery( "SELECT * FROM urls WHERE url LIKE '"+urlFound+"'");
 
 		if (result.next()) {
 	        	System.out.println("URL "+urlFound+" already in DB");
+			return true;
+		}
+	       // System.out.println("URL "+urlFound+" not yet in DB");
+		return false;
+	}
+
+	public boolean wordInUrlInDB(String word, int urlID) throws SQLException, IOException {
+        Statement stat = connection.createStatement();
+		ResultSet result = stat.executeQuery( "SELECT * FROM words WHERE word LIKE '"+word+"' AND urlid LIKE '"+urlID+"'");
+
+		if (result.next()) {
+	        	System.out.println("word "+word+" with urlid "+urlID+" already in DB");
 			return true;
 		}
 	       // System.out.println("URL "+urlFound+" not yet in DB");
@@ -75,6 +89,13 @@ public class Crawler
 		//System.out.println("Executing "+query);
 		stat.executeUpdate( query );
 		urlID++;
+	}
+
+	public void insertWordInDB(String word, int urlID) throws SQLException, IOException{
+        Statement stat = connection.createStatement();
+		String query = "INSERT INTO urls VALUES ('"+word+"','"+urlID+"')";
+		//System.out.println("Executing "+query);
+		stat.executeUpdate( query );
 	}
 
 /*
@@ -121,56 +142,46 @@ public class Crawler
                 || url.contains(".pptx")
                 || url.contains(".jpg"))
             return;
-
-		// Check if it is already in the database
 		try{
+			// Check if it is already in the database
 			if (urlInDB(url))
 				return;
-		}
-		catch(Exception e){
 
-		}
-
-		System.out.println("Inserted URL: " + url + " into database");
-		// Crawl page with jsoup
-        Document doc = null;
-        try {
+			System.out.println("Inserted URL: " + url + " into database");
+			// Crawl page with jsoup
+	        Document doc = null;
+	    
             doc = Jsoup.connect(url)
                     .userAgent("Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:25.0) Gecko/20100101 Firefox/25.0")
                     .referrer("http://www.google.com")
                     .timeout(10000)
                     .ignoreHttpErrors(true)
                     .get();
-        } catch (Exception e1) {
-            return;
-        }
 
-		//Text processing
-        String text = doc.body().text();
-        StringBuilder sb = new StringBuilder();
-        for(int i = 0; i< text.length(); i++) {
-        	if(sb.length() >= 100)
-        		break;
-            char c = text.charAt(i);
-            if (Character.isAlphabetic(c) || Character.isDigit(c) || Character.isWhitespace(c)) {
-                sb.append(c);
-            }
-        }
-        String description = sb.toString();
-        // Insert url and description into database
-		try{
-			insertURLIDnB(url, description);
+			//Text processing
+	        String text = doc.body().text();
+	        StringBuilder sb = new StringBuilder();
+	        for(int i = 0; i< text.length(); i++) {
+	        	if(sb.length() >= 100)
+	        		break;
+	            char c = text.charAt(i);
+	            if (Character.isAlphabetic(c) || Character.isDigit(c) || Character.isWhitespace(c)) {
+	                sb.append(c);
+	            }
+	        }
+	        String description = sb.toString();
+	        // Insert url and description into database
+			insertURLInDB(url, description);
 			count++;
-		}
-		catch(Exception e){
 
-		}
-
-
-        Elements questions = doc.select("a[href]");
-        for (Element link : questions) {
-            String adjacent_link = link.attr("abs:href");
-            toVisit.add(adjacent_link);
+	        Elements questions = doc.select("a[href]");
+	        for (Element link : questions) {
+	            String adjacent_link = link.attr("abs:href");
+	            toVisit.add(adjacent_link);
+	        }
+    	}
+        catch(Exception e){
+        	e.printStackTrace();
         }
 
 	}
