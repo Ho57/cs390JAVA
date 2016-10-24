@@ -73,10 +73,11 @@ public class Crawler
 
 	public boolean wordInUrlInDB(String word, int urlID) throws SQLException, IOException {
         Statement stat = connection.createStatement();
-		ResultSet result = stat.executeQuery( "SELECT * FROM words WHERE word LIKE '"+word+"' AND urlid LIKE '"+urlID+"'");
+        //System.out.println("Checking for word: "+word);
+		ResultSet result = stat.executeQuery( "SELECT * FROM words WHERE (word LIKE '"+word+"') AND (urlid = '"+urlID+"')");
 
 		if (result.next()) {
-	        	System.out.println("word "+word+" with urlid "+urlID+" already in DB");
+	        System.out.println("word "+word+" with urlid "+urlID+" already in DB");
 			return true;
 		}
 	       // System.out.println("URL "+urlFound+" not yet in DB");
@@ -93,7 +94,7 @@ public class Crawler
 
 	public void insertWordInDB(String word, int urlID) throws SQLException, IOException{
         Statement stat = connection.createStatement();
-		String query = "INSERT INTO urls VALUES ('"+word+"','"+urlID+"')";
+		String query = "INSERT INTO words VALUES ('"+word+"','"+urlID+"')";
 		//System.out.println("Executing "+query);
 		stat.executeUpdate( query );
 	}
@@ -170,6 +171,13 @@ public class Crawler
 	            }
 	        }
 	        String description = sb.toString();
+	        // insert word-urlid pair into words table
+	        String[] words = text.split(" ");
+	        for(int i = 0; i < words.length; i++){
+	        	if(words[i].length() != 0 && !wordInUrlInDB(words[i].replaceAll("\'","\'\'"), urlID)){
+	        		insertWordInDB(words[i].replaceAll("\'","\'\'"), urlID);
+	        	}
+	        }
 	        // Insert url and description into database
 			insertURLInDB(url, description);
 			count++;
