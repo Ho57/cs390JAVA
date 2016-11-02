@@ -54,8 +54,8 @@ public class Crawler
 		catch (Exception e) {
 		}
 			
-		// Create the table
-        	stat.executeUpdate("CREATE TABLE urls (urlid INT, url VARCHAR(512), description VARCHAR(200))");
+		// Create the tables
+        	stat.executeUpdate("CREATE TABLE urls (urlid INT, url VARCHAR(512), description VARCHAR(200), image VARCHAR(200))");
         	stat.executeUpdate("CREATE TABLE words (word VARCHAR(50), urlid INT)");
 	}
 
@@ -71,22 +71,9 @@ public class Crawler
 		return false;
 	}
 
-	public boolean wordInUrlInDB(String word, int urlID) throws SQLException, IOException {
+	public void insertURLInDB( String url, String description, String image) throws SQLException, IOException {
         Statement stat = connection.createStatement();
-        //System.out.println("Checking for word: "+word);
-		ResultSet result = stat.executeQuery( "SELECT * FROM words WHERE (word LIKE '"+word+"') AND (urlid = '"+urlID+"')");
-
-		if (result.next()) {
-	        System.out.println("word "+word+" with urlid "+urlID+" already in DB");
-			return true;
-		}
-	       // System.out.println("URL "+urlFound+" not yet in DB");
-		return false;
-	}
-
-	public void insertURLInDB( String url, String description) throws SQLException, IOException {
-        Statement stat = connection.createStatement();
-		String query = "INSERT INTO urls VALUES ('"+urlID+"','"+url+"','"+description+"')";
+		String query = "INSERT INTO urls VALUES ('"+urlID+"','"+url+"','"+description+"','"+image+"')";
 		//System.out.println("Executing "+query);
 		stat.executeUpdate( query );
 		urlID++;
@@ -173,13 +160,23 @@ public class Crawler
 	        String description = sb.toString();
 	        // insert word-urlid pair into words table
 	        String[] words = text.split(" ");
+	        // use hash set to determine if word has been encountered in the current url
+	        HashSet<String> wordsSeen = new HashSet<String>();
 	        for(int i = 0; i < words.length; i++){
-	        	if(words[i].length() != 0 && !wordInUrlInDB(words[i].replaceAll("\'","\'\'"), urlID)){
-	        		insertWordInDB(words[i].replaceAll("\'","\'\'"), urlID);
+	        	String word = words[i].replaceAll("\'","\'\'");
+	        	if(word.length() != 0 && !wordsSeen.contains(word)){
+	        		insertWordInDB(word, urlID);
+	        		wordsSeen.add(word);
 	        	}
 	        }
+	        String image = null;
+	        for (Element e : doc.select("img")) {
+	        	image = e.attr("src");
+	        	break;
+	        }
+
 	        // Insert url and description into database
-			insertURLInDB(url, description);
+			insertURLInDB(url, description, image);
 			count++;
 
 	        Elements questions = doc.select("a[href]");
@@ -207,7 +204,7 @@ public class Crawler
 		catch( Exception e) {
          		e.printStackTrace();
 		}
-		while(count < 1000 && !toVisit.isEmpty()){
+		while(count < 10 && !toVisit.isEmpty()){
 			String url = toVisit.poll();
 			crawler.fetchURL(url);
 		}
