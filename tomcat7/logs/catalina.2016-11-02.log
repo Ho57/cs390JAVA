@@ -1,0 +1,1073 @@
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.72
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Sep 14 2016 12:12:26 UTC
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.72.0
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            4.4.0-45-generic
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-8-oracle/jre
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_91-b14
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /opt/tomcat7
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /opt/tomcat7
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/opt/tomcat7/conf/logging.properties
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/opt/tomcat7/endorsed
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/opt/tomcat7
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/opt/tomcat7
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/opt/tomcat7/temp
+Nov 02, 2016 2:07:36 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Nov 02, 2016 2:07:36 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:07:36 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 598 ms
+Nov 02, 2016 2:07:36 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 02, 2016 2:07:36 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.72
+Nov 02, 2016 2:07:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/ROOT
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/ROOT has finished in 282 ms
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/manager
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/manager has finished in 71 ms
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/SearchEngine
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/SearchEngine has finished in 51 ms
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/docs
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/docs has finished in 45 ms
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/examples
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/examples has finished in 206 ms
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/host-manager
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/host-manager has finished in 29 ms
+Nov 02, 2016 2:07:37 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:07:37 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:07:37 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 730 ms
+Nov 02, 2016 2:20:57 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 2:20:57 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 2:20:58 PM org.apache.tomcat.util.digester.Digester fatalError
+SEVERE: Parse Fatal Error at line 1 column 1: Premature end of file.
+org.xml.sax.SAXParseException; systemId: jndi:/localhost/SearchEngine/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1019)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1576)
+	at org.apache.catalina.startup.ContextConfig.parseWebXml(ContextConfig.java:1862)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1262)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:888)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:388)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5522)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:4138)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1539)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1512)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1748)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:333)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1370)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1542)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1552)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1520)
+	at java.lang.Thread.run(Thread.java:745)
+
+Nov 02, 2016 2:20:58 PM org.apache.catalina.startup.ContextConfig parseWebXml
+SEVERE: Parse error in application web.xml file at jndi:/localhost/SearchEngine/WEB-INF/web.xml
+org.xml.sax.SAXParseException; systemId: jndi:/localhost/SearchEngine/WEB-INF/web.xml; lineNumber: 1; columnNumber: 1; Premature end of file.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:327)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1438)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1019)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:643)
+	at org.apache.tomcat.util.digester.Digester.parse(Digester.java:1576)
+	at org.apache.catalina.startup.ContextConfig.parseWebXml(ContextConfig.java:1862)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1262)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:888)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:388)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5522)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:4138)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1539)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1512)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1748)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:333)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1370)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1542)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1552)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1520)
+	at java.lang.Thread.run(Thread.java:745)
+
+Nov 02, 2016 2:20:58 PM org.apache.catalina.startup.ContextConfig parseWebXml
+SEVERE: Occurred at line 1 column 1
+Nov 02, 2016 2:20:58 PM org.apache.catalina.startup.ContextConfig configureStart
+SEVERE: Marking this application unavailable due to previous error(s)
+Nov 02, 2016 2:20:58 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: One or more components marked the context as not correctly configured
+Nov 02, 2016 2:20:58 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/SearchEngine] startup failed due to previous errors
+Nov 02, 2016 2:20:58 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 2:23:38 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 2:23:48 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 2:23:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 2:23:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 2:44:17 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Nov 02, 2016 2:44:17 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:44:17 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:44:17 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 02, 2016 2:44:17 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:44:17 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:44:17 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:44:17 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.72
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Sep 14 2016 12:12:26 UTC
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.72.0
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            4.4.0-45-generic
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-8-oracle/jre
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_91-b14
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /opt/tomcat7
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /opt/tomcat7
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/opt/tomcat7/conf/logging.properties
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/opt/tomcat7/endorsed
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/opt/tomcat7
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/opt/tomcat7
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/opt/tomcat7/temp
+Nov 02, 2016 2:44:26 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Nov 02, 2016 2:44:26 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:44:26 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 481 ms
+Nov 02, 2016 2:44:26 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 02, 2016 2:44:26 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.72
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/ROOT
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/ROOT has finished in 259 ms
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/manager
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/manager has finished in 66 ms
+Nov 02, 2016 2:44:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/SearchEngine
+Nov 02, 2016 2:44:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/SearchEngine has finished in 60 ms
+Nov 02, 2016 2:44:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/docs
+Nov 02, 2016 2:44:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/docs has finished in 46 ms
+Nov 02, 2016 2:44:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/examples
+Nov 02, 2016 2:44:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/examples has finished in 185 ms
+Nov 02, 2016 2:44:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/host-manager
+Nov 02, 2016 2:44:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/host-manager has finished in 33 ms
+Nov 02, 2016 2:44:27 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:44:27 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:44:27 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 688 ms
+Nov 02, 2016 2:44:32 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Nov 02, 2016 2:44:32 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:44:32 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:44:32 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 02, 2016 2:44:32 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:44:32 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:44:32 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:44:32 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.72
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Sep 14 2016 12:12:26 UTC
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.72.0
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            4.4.0-45-generic
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-8-oracle/jre
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_91-b14
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /opt/tomcat7
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /opt/tomcat7
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/opt/tomcat7/conf/logging.properties
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/opt/tomcat7/endorsed
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/opt/tomcat7
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/opt/tomcat7
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/opt/tomcat7/temp
+Nov 02, 2016 2:44:42 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Nov 02, 2016 2:44:42 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:44:42 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 492 ms
+Nov 02, 2016 2:44:42 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 02, 2016 2:44:42 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.72
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/ROOT
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/ROOT has finished in 239 ms
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/manager
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/manager has finished in 60 ms
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/SearchEngine
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/SearchEngine has finished in 52 ms
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/docs
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/docs has finished in 64 ms
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/examples
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/examples has finished in 184 ms
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/host-manager
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/host-manager has finished in 34 ms
+Nov 02, 2016 2:44:42 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:44:42 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:44:42 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 676 ms
+Nov 02, 2016 2:45:13 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Nov 02, 2016 2:45:13 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:45:13 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:45:13 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 02, 2016 2:45:13 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:45:13 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:45:13 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:45:13 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.72
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Sep 14 2016 12:12:26 UTC
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.72.0
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            4.4.0-45-generic
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-8-oracle/jre
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_91-b14
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /opt/tomcat7
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /opt/tomcat7
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/opt/tomcat7/conf/logging.properties
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/opt/tomcat7/endorsed
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/opt/tomcat7
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/opt/tomcat7
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/opt/tomcat7/temp
+Nov 02, 2016 2:45:15 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Nov 02, 2016 2:45:15 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:45:15 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 510 ms
+Nov 02, 2016 2:45:15 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 02, 2016 2:45:15 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.72
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/ROOT
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/ROOT has finished in 248 ms
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/manager
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/manager has finished in 67 ms
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/SearchEngine
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/SearchEngine has finished in 52 ms
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/docs
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/docs has finished in 42 ms
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/examples
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/examples has finished in 173 ms
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/host-manager
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/host-manager has finished in 35 ms
+Nov 02, 2016 2:45:15 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:45:15 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:45:15 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 663 ms
+Nov 02, 2016 2:46:55 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context []
+Nov 02, 2016 2:46:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/ROOT
+Nov 02, 2016 2:46:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/ROOT has finished in 87 ms
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/examples]
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/host-manager]
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/manager]
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/SearchEngine]
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/docs]
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/manager
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/manager has finished in 53 ms
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/SearchEngine
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/SearchEngine has finished in 27 ms
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/docs
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/docs has finished in 27 ms
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/examples
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/examples has finished in 107 ms
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/host-manager
+Nov 02, 2016 2:47:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/host-manager has finished in 33 ms
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context []
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/examples]
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/host-manager]
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/manager]
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/SearchEngine]
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/docs]
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/ROOT
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/ROOT has finished in 22 ms
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/manager
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/manager has finished in 39 ms
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/SearchEngine
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/SearchEngine has finished in 37 ms
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/docs
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/docs has finished in 22 ms
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/examples
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/examples has finished in 78 ms
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/host-manager
+Nov 02, 2016 2:47:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/host-manager has finished in 24 ms
+Nov 02, 2016 2:53:36 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 2:53:36 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 2:53:37 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 2:53:45 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Nov 02, 2016 2:53:45 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:53:45 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:53:45 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 02, 2016 2:53:45 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:53:45 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:53:45 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:53:45 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.72
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Sep 14 2016 12:12:26 UTC
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.72.0
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            4.4.0-45-generic
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-8-oracle/jre
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_91-b14
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /opt/tomcat7
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /opt/tomcat7
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/opt/tomcat7/conf/logging.properties
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/opt/tomcat7/endorsed
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/opt/tomcat7
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/opt/tomcat7
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/opt/tomcat7/temp
+Nov 02, 2016 2:53:47 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Nov 02, 2016 2:53:47 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:53:47 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 517 ms
+Nov 02, 2016 2:53:47 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 02, 2016 2:53:47 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.72
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/ROOT
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/ROOT has finished in 263 ms
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/manager
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/manager has finished in 75 ms
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/SearchEngine
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/SearchEngine has finished in 59 ms
+Nov 02, 2016 2:53:47 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/docs
+Nov 02, 2016 2:53:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/docs has finished in 48 ms
+Nov 02, 2016 2:53:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/examples
+Nov 02, 2016 2:53:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/examples has finished in 181 ms
+Nov 02, 2016 2:53:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/host-manager
+Nov 02, 2016 2:53:48 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/host-manager has finished in 38 ms
+Nov 02, 2016 2:53:48 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:53:48 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:53:48 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 722 ms
+Nov 02, 2016 2:54:18 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 2:54:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 2:54:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 2:54:20 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Nov 02, 2016 2:54:20 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:54:20 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:54:20 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Nov 02, 2016 2:54:20 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:54:20 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:54:20 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:54:20 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server version:        Apache Tomcat/7.0.72
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server built:          Sep 14 2016 12:12:26 UTC
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Server number:         7.0.72.0
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Name:               Linux
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: OS Version:            4.4.0-45-generic
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Architecture:          amd64
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Java Home:             /usr/lib/jvm/java-8-oracle/jre
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Version:           1.8.0_91-b14
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: JVM Vendor:            Oracle Corporation
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_BASE:         /opt/tomcat7
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: CATALINA_HOME:         /opt/tomcat7
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.config.file=/opt/tomcat7/conf/logging.properties
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.endorsed.dirs=/opt/tomcat7/endorsed
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.base=/opt/tomcat7
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Dcatalina.home=/opt/tomcat7
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.VersionLoggerListener log
+INFO: Command line argument: -Djava.io.tmpdir=/opt/tomcat7/temp
+Nov 02, 2016 2:54:22 PM org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Nov 02, 2016 2:54:22 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:54:22 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 503 ms
+Nov 02, 2016 2:54:22 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Nov 02, 2016 2:54:22 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.72
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/ROOT
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/ROOT has finished in 272 ms
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/manager
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/manager has finished in 90 ms
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/SearchEngine
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/SearchEngine has finished in 69 ms
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/docs
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/docs has finished in 52 ms
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/examples
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/examples has finished in 196 ms
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/host-manager
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/host-manager has finished in 38 ms
+Nov 02, 2016 2:54:22 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Nov 02, 2016 2:54:22 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Nov 02, 2016 2:54:22 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 766 ms
+Nov 02, 2016 2:54:42 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 2:54:42 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 2:54:42 PM org.apache.catalina.core.StandardContext reload
+SEVERE: Exception starting Context with name [/SearchEngine]
+org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/SearchEngine]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:162)
+	at org.apache.catalina.core.StandardContext.reload(StandardContext.java:4138)
+	at org.apache.catalina.startup.HostConfig.reload(HostConfig.java:1539)
+	at org.apache.catalina.startup.HostConfig.checkResources(HostConfig.java:1512)
+	at org.apache.catalina.startup.HostConfig.check(HostConfig.java:1748)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:333)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.ContainerBase.backgroundProcess(ContainerBase.java:1370)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1542)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.processChildren(ContainerBase.java:1552)
+	at org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor.run(ContainerBase.java:1520)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: Invalid <url-pattern> index.html in servlet mapping
+	at org.apache.catalina.core.StandardContext.addServletMapping(StandardContext.java:3429)
+	at org.apache.catalina.core.StandardContext.addServletMapping(StandardContext.java:3404)
+	at org.apache.catalina.deploy.WebXml.configureContext(WebXml.java:1438)
+	at org.apache.catalina.startup.ContextConfig.webConfig(ContextConfig.java:1359)
+	at org.apache.catalina.startup.ContextConfig.configureStart(ContextConfig.java:888)
+	at org.apache.catalina.startup.ContextConfig.lifecycleEvent(ContextConfig.java:388)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:117)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5522)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	... 12 more
+
+Nov 02, 2016 2:54:42 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 2:55:02 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 2:55:02 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+SEVERE: The web application [/SearchEngine] appears to have started a thread named [http-bio-8080-exec-5] but has failed to stop it. This is very likely to create a memory leak.
+Nov 02, 2016 2:55:02 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+SEVERE: The web application [/SearchEngine] appears to have started a thread named [http-bio-8080-exec-6] but has failed to stop it. This is very likely to create a memory leak.
+Nov 02, 2016 2:55:02 PM org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+SEVERE: The web application [/SearchEngine] appears to have started a thread named [http-bio-8080-exec-7] but has failed to stop it. This is very likely to create a memory leak.
+Nov 02, 2016 3:00:23 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:00:23 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:00:23 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 3:00:43 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:00:43 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:00:43 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 3:00:53 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:00:53 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:00:53 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 3:01:03 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:01:03 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:01:03 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context []
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/examples]
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/host-manager]
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/manager]
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/SearchEngine]
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/docs]
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/ROOT
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/ROOT has finished in 26 ms
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/manager
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/manager has finished in 32 ms
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/SearchEngine
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/SearchEngine has finished in 33 ms
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/docs
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/docs has finished in 28 ms
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/examples
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/examples has finished in 97 ms
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/host-manager
+Nov 02, 2016 3:01:43 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/host-manager has finished in 25 ms
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context []
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/examples]
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/host-manager]
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/manager]
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/SearchEngine]
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig undeploy
+INFO: Undeploying context [/docs]
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/ROOT
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/ROOT has finished in 41 ms
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/manager
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/manager has finished in 37 ms
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/SearchEngine
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/SearchEngine has finished in 21 ms
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/docs
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/docs has finished in 18 ms
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/examples
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/examples has finished in 77 ms
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /opt/tomcat7/webapps/host-manager
+Nov 02, 2016 3:01:53 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deployment of web application directory /opt/tomcat7/webapps/host-manager has finished in 21 ms
+Nov 02, 2016 3:02:53 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:02:53 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:02:53 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 3:03:23 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:03:23 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:03:23 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 3:04:03 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:04:03 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:04:03 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 3:05:03 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:05:03 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:05:03 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 3:05:13 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:05:13 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:05:13 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 3:06:43 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:06:43 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:06:44 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 3:07:04 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 3:07:04 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 3:07:04 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 4:28:44 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 4:28:44 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 4:28:44 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 4:33:44 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 4:33:44 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 5:01:45 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 5:01:45 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 5:02:25 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 5:02:25 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 5:03:35 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 5:03:35 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 5:07:15 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 5:07:15 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 5:09:25 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 5:09:25 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 5:09:45 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 5:09:45 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 5:10:05 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 5:10:05 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 5:10:45 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 5:10:45 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 9:19:56 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 9:19:57 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 9:21:27 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 9:21:27 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 10:58:57 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 10:58:57 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:13:17 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:13:17 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:14:17 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:14:17 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:20:27 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:20:27 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:23:47 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:23:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:24:08 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:24:08 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:24:38 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:24:38 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:25:08 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:25:08 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:25:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:25:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:25:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:25:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:30:58 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:30:58 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:40:38 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 11:40:38 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:40:38 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:40:48 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 11:40:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:40:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:41:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:41:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:43:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:43:18 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:43:28 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 11:43:28 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:43:28 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:43:48 PM org.apache.catalina.startup.HostConfig reload
+INFO: Reloading context [/SearchEngine]
+Nov 02, 2016 11:43:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:43:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:49:58 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:49:58 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:50:38 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:50:38 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:51:28 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:51:28 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:52:08 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:52:08 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:56:28 PM org.apache.catalina.loader.WebappClassLoaderBase modified
+INFO:     Additional JARs have been added
+Nov 02, 2016 11:56:28 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:56:28 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Nov 02, 2016 11:56:28 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:57:28 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:57:28 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Nov 02, 2016 11:57:28 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed
+Nov 02, 2016 11:58:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] has started
+Nov 02, 2016 11:58:48 PM org.apache.catalina.startup.TldConfig execute
+INFO: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Nov 02, 2016 11:58:48 PM org.apache.catalina.core.StandardContext reload
+INFO: Reloading Context with name [/SearchEngine] is completed

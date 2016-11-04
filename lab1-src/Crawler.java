@@ -7,19 +7,47 @@ import java.net.*;
 import java.util.regex.*;
 import java.sql.*;
 import java.util.*;
+import java.lang.Thread;
+
+
+
 
 public class Crawler
 {
+
+	class urlInsertThread implements Runnable {
+		String url;
+		String description;
+		String image;
+	   public urlInsertThread(String url, String description, String image) {
+	       this.url = url;
+	       this.description = description;
+	       this.image = image;
+	   }
+
+	   public void run() {
+	   		try{
+	   			insertURLInDB(url, description, image);
+	   		}
+	   		catch (Exception e){
+	   			e.printStackTrace();
+	   		}
+	   }
+	}
+
 	Connection connection;
 	int urlID;
+	HashSet<String> visited;
 	public Properties props;
 	static Queue<String> toVisit;
 	static int count;
+
 
 	Crawler() {
 		urlID = 0;
 		count = 0;
 		toVisit = new LinkedList<String>();
+		visited = new HashSet<String>();
 	}
 
 	public void readProperties() throws IOException {
@@ -56,7 +84,7 @@ public class Crawler
 			
 		// Create the tables
         	stat.executeUpdate("CREATE TABLE urls (urlid INT, url VARCHAR(512), description VARCHAR(200), image VARCHAR(200))");
-        	stat.executeUpdate("CREATE TABLE words (word VARCHAR(50), urlid INT)");
+        	stat.executeUpdate("CREATE TABLE words (word VARCHAR(250), urlid INT)");
 	}
 
 	public boolean urlInDB(String urlFound) throws SQLException, IOException {
@@ -123,17 +151,10 @@ public class Crawler
         if(url.endsWith("/"))
             url = url.substring(0, url.length()-1);
 
-        // check for invalid link
-        if (url.contains("@")
-                || url.contains(":80")
-                || url.contains(".pdf")
-                || url.contains(".pptx")
-                || url.contains(".jpg"))
-            return;
+		// Check if it is already in the database
+		if (visited.contains(url))
+			return;
 		try{
-			// Check if it is already in the database
-			if (urlInDB(url))
-				return;
 
 			System.out.println("Inserted URL: " + url + " into database");
 			// Crawl page with jsoup
@@ -147,36 +168,30 @@ public class Crawler
                     .get();
 
 			//Text processing
-	        String text = doc.body().text();
-	        StringBuilder sb = new StringBuilder();
-	        for(int i = 0; i< text.length(); i++) {
-	        	if(sb.length() >= 100)
-	        		break;
-	            char c = text.charAt(i);
-	            if (Character.isAlphabetic(c) || Character.isDigit(c) || Character.isWhitespace(c)) {
-	                sb.append(c);
-	            }
-	        }
-	        String description = sb.toString();
+	        String text = doc.body().text().replaceAll("[^A-Za-z0-9 ]", "");
+	
+	        String description = text.substring(0, Math.min(100, text.length()));
 	        // insert word-urlid pair into words table
 	        String[] words = text.split(" ");
 	        // use hash set to determine if word has been encountered in the current url
 	        HashSet<String> wordsSeen = new HashSet<String>();
 	        for(int i = 0; i < words.length; i++){
-	        	String word = words[i].replaceAll("\'","\'\'");
+	        	String word = words[i].toLowerCase();
 	        	if(word.length() != 0 && !wordsSeen.contains(word)){
 	        		insertWordInDB(word, urlID);
 	        		wordsSeen.add(word);
 	        	}
 	        }
 	        String image = null;
-	        for (Element e : doc.select("img")) {
-	        	image = e.attr("src");
-	        	break;
-	        }
+	        Element img = doc.select("img").first();
+	        if(img != null)
+				image = img.attr("src");
+
 
 	        // Insert url and description into database
-			insertURLInDB(url, description, image);
+	        Runnable r = new urlInsertThread(url, description, image);
+	        new Thread(r).start();
+			//insertURLInDB(url, description, image);
 			count++;
 
 	        Elements questions = doc.select("a[href]");
@@ -184,6 +199,7 @@ public class Crawler
 	            String adjacent_link = link.attr("abs:href");
 	            toVisit.add(adjacent_link);
 	        }
+	        visited.add(url);
     	}
         catch(Exception e){
         	e.printStackTrace();
@@ -204,7 +220,7 @@ public class Crawler
 		catch( Exception e) {
          		e.printStackTrace();
 		}
-		while(count < 10 && !toVisit.isEmpty()){
+		while(count < 100 && !toVisit.isEmpty()){
 			String url = toVisit.poll();
 			crawler.fetchURL(url);
 		}
