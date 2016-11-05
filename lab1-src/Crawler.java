@@ -185,7 +185,7 @@ public class Crawler
 	        String image = null;
 	        Element img = doc.select("img").first();
 	        if(img != null)
-				image = img.attr("src");
+				image = img.absUrl("src");
 
 
 	        // Insert url and description into database
