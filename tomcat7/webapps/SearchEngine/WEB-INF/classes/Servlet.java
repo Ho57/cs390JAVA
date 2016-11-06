@@ -107,7 +107,6 @@ public class Servlet extends HttpServlet {
             }
          }
 
-
          out.println("<hr>");
 
          out.println("<h2>Total "+vec.size()+" records found:</h2>");

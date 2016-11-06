@@ -9,8 +9,6 @@ import java.sql.*;
 import java.util.*;
 import java.lang.Thread;
 
-
-
 public class Crawler
 {
 
@@ -87,7 +85,7 @@ public class Crawler
         	stat.executeUpdate("CREATE TABLE urls (urlid INT, url VARCHAR(512), description VARCHAR(200), image VARCHAR(200))");
         	stat.executeUpdate("CREATE TABLE words (word VARCHAR(250), urlid INT)");
 	}
-
+	/*
 	public boolean urlInDB(String urlFound) throws SQLException, IOException {
         Statement stat = connection.createStatement();
 		ResultSet result = stat.executeQuery( "SELECT * FROM urls WHERE url LIKE '"+urlFound+"'");
@@ -99,7 +97,7 @@ public class Crawler
 	       // System.out.println("URL "+urlFound+" not yet in DB");
 		return false;
 	}
-
+	*/
 	public void insertURLInDB( String url, String description, String image) throws SQLException, IOException {
         Statement stat = connection.createStatement();
 		String query = "INSERT INTO urls VALUES ('"+urlID+"','"+url+"','"+description+"','"+image+"')";
@@ -118,7 +116,7 @@ public class Crawler
    	public void fetchURL(String url) {
         // process url
         if(!url.contains(domain)){
-        	System.out.println("Stray:"+url);
+        	//System.out.println("Stray:"+url);
         	return;
         }
         if(url.startsWith("www") == true)
@@ -131,7 +129,7 @@ public class Crawler
 			return;
 		try{
 
-			System.out.println("Inserted URL: " + url + " into database");
+			//System.out.println("Inserted URL: " + url + " into database");
 			// Crawl page with jsoup
 	        Document doc = null;
 	    
@@ -204,7 +202,7 @@ public class Crawler
 		if(args.length > 0)
 			maxURL = Integer.parseInt(args[0]);
 		else
-			maxURL = 100;
+			maxURL = 10000;
 		if(args.length > 1)
 			domain = args[1];
 		else
@@ -218,7 +216,7 @@ public class Crawler
 			toVisit.add(root);
 		}
 		catch( Exception e) {
-         		e.printStackTrace();
+         		//e.printStackTrace();
 		}
 		while(count < maxURL && !toVisit.isEmpty()){
 			String url = toVisit.poll();
