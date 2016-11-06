@@ -4,6 +4,46 @@ import javax.servlet.http.*;
 import java.sql.*;
 import java.util.*;
  
+// HTMLFilter class
+class HTMLFilter{
+    public static String filter(String message) {
+
+        if (message == null)
+            return (null);
+
+        char content[] = new char[message.length()];
+        message.getChars(0, message.length(), content, 0);
+        StringBuffer result = new StringBuffer(content.length + 50);
+        for (int i = 0; i < content.length; i++) {
+            switch (content[i]) {
+            case '<':
+                result.append("&lt;");
+                break;
+            case '>':
+                result.append("&gt;");
+                break;
+            case '&':
+                result.append("&amp;");
+                break;
+            case '"':
+                result.append("&quot;");
+                break;
+            case '\'':
+                result.append("&apos;");
+                break;
+            case '\\':
+                result.append("&bs;");
+                break;
+            default:
+                result.append(content[i]);
+            }
+        }
+        return (result.toString());
+
+    }
+}
+
+
 public class Servlet extends HttpServlet {
    //compile line - sudo javac -cp .:../../../../lib/servlet-api.jar Servlet.java
    @Override
@@ -16,6 +56,10 @@ public class Servlet extends HttpServlet {
       PrintWriter out = response.getWriter();
       String query = request.getParameter("query");
       String[] params = query.split(" ");
+      HTMLFilter htmlFilter = new HTMLFilter();
+      for(int i = 0; i < params.length; i++){
+         params[i] = htmlFilter.filter(params[i]);
+      }
       Connection conn = null;
       Statement stmt = null;
       //HashSet<Integer> hs = new HashSet<Integer>();
@@ -77,7 +121,7 @@ public class Servlet extends HttpServlet {
                String url = rs.getString("url");
                String description = rs.getString("description");
                String imgSrc = rs.getString("image");
-               out.println("<img src=\""+imgSrc+"\" style=\"height: 50px; width:50px;\">");
+               out.println("<img src=\""+imgSrc+"\" style=\"height: 50px; width:50px;\" border=\"3\">");
                out.println("<a href=\""+url+"\" font-size:200px>"+url+"</a>");
                out.println("<p>"+description+"</p>");
             }

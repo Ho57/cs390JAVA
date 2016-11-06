@@ -11,7 +11,6 @@ import java.lang.Thread;
 
 
 
-
 public class Crawler
 {
 
@@ -42,6 +41,8 @@ public class Crawler
 	static Queue<String> toVisit;
 	static int count;
 
+	static int maxURL = 0;
+	static String domain = null;
 
 	Crawler() {
 		urlID = 0;
@@ -114,38 +115,12 @@ public class Crawler
 		stat.executeUpdate( query );
 	}
 
-/*
-	public String makeAbsoluteURL(String url, String parentURL) {
-		if (url.indexOf(":")<0) {
-			// the protocol part is already there.
-			return url;
-		}
-
-		if (url.length > 0 && url.charAt(0) == '/') {
-			// It starts with '/'. Add only host part.
-			int posHost = url.indexOf("://");
-			if (posHost <0) {
-				return url;
-			}
-			int posAfterHist = url.indexOf("/", posHost+3);
-			if (posAfterHist < 0) {
-				posAfterHist = url.Length();
-			}
-			String hostPart = url.substring(0, posAfterHost);
-			return hostPart + "/" + url;
-		} 
-
-		// URL start with a char different than "/"
-		int pos = parentURL.lastIndexOf("/");
-		int posHost = parentURL.indexOf("://");
-		if (posHost <0) {
-			return url;
-		}
-	}
-*/
-
    	public void fetchURL(String url) {
         // process url
+        if(!url.contains(domain)){
+        	System.out.println("Stray:"+url);
+        	return;
+        }
         if(url.startsWith("www") == true)
             url = "http://" + url;
         if(url.endsWith("/"))
@@ -170,7 +145,23 @@ public class Crawler
 			//Text processing
 	        String text = doc.body().text().replaceAll("[^A-Za-z0-9 ]", "");
 	
-	        String description = text.substring(0, Math.min(100, text.length()));
+	        //String description = text.substring(0, Math.min(100, text.length()));
+	        String description = doc.title();
+	        if(description == null){
+	        	Elements htag = doc.select("h1");
+	        	if(htag != null){
+	        		description = htag.text();
+	        	}
+	        	else{
+	        		Elements ptag = doc.select("p");
+	        		if(ptag != null){
+	        			description = ptag.text();
+	        		}
+	        	}
+	        }
+	        description = description.replaceAll("\'", "\'\'");
+	        description = description.substring(0, Math.min(100, description.length()));
+
 	        // insert word-urlid pair into words table
 	        String[] words = text.split(" ");
 	        // use hash set to determine if word has been encountered in the current url
@@ -210,6 +201,15 @@ public class Crawler
    	public static void main(String[] args)
    	{
 		Crawler crawler = new Crawler();
+		if(args.length > 0)
+			maxURL = Integer.parseInt(args[0]);
+		else
+			maxURL = 100;
+		if(args.length > 1)
+			domain = args[1];
+		else
+			domain = "cs.purdue.edu";
+
 
 		try {
 			crawler.readProperties();
@@ -220,7 +220,7 @@ public class Crawler
 		catch( Exception e) {
          		e.printStackTrace();
 		}
-		while(count < 100 && !toVisit.isEmpty()){
+		while(count < maxURL && !toVisit.isEmpty()){
 			String url = toVisit.poll();
 			crawler.fetchURL(url);
 		}
