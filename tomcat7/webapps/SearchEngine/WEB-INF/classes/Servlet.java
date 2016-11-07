@@ -120,7 +120,11 @@ public class Servlet extends HttpServlet {
                String url = rs.getString("url");
                String description = rs.getString("description");
                String imgSrc = rs.getString("image");
+               
+               out.println("<a href=\""+url+"\">");
                out.println("<img src=\""+imgSrc+"\" style=\"height: 50px; width:50px;\" border=\"3\">");
+               out.println("</a>");
+               
                out.println("<a href=\""+url+"\" font-size:200px>"+url+"</a>");
                out.println("<p>"+description+"</p>");
             }
